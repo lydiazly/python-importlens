@@ -5,7 +5,7 @@
 
 The `inspect_imports` function in [this file](./src/importlens/importlens.py) is used to get all import statements in the caller's frame.
 
-If more than `max_obj` are imported from a module, they will be displayed as a wildcard, i.e., `from ... import *`. Increase the value of `max_obj` if needed.
+If more than `max_obj` objects are imported from a module, they will be displayed as a wildcard, i.e., `from ... import *`. Increase the value of `max_obj` if needed.
 
 The original intention to write this function was to verify the imports in LeetCode's Python3 environment.
 For example, in a LeetCode editor, copy & paste `inspect_imports` function then call it by `print('\n'.join(inspect_imports()))` to print the results to stdout.
@@ -18,9 +18,9 @@ Install this module:
 ```sh
 # Install from GitHub
 python3 -m pip install git+https://github.com/lydiazly/python-importlens.git
-# Or install from local clone in in editable/develop mode
-git clone https://github.com/lydiazly/python-importlens.git importlens
-cd importlens
+# Or install from local clone in editable/develop mode
+git clone https://github.com/lydiazly/python-importlens.git
+cd python-importlens
 python3 -m pip install -e .
 ```
 
